@@ -1,0 +1,21 @@
+{% load static %}
+    <section id="intro" class="wrapper style1 fullscreen fade-up">
+            <div class="inner">
+                <h1>RSNA Bone Age Detection</h1>
+                <p>
+                    Welcome 
+                    {% if user.is_authenticated %}
+                    {{ user.first_name }}! 
+                    {% endif %}
+                </p>
+                <ul class="actions">
+                    {% if not user.is_authenticated %}
+                    <li><a href="#signup" class="button scrolly">Sign up</a></li>
+                    {% endif %}
+                    {% if user.is_authenticated %}
+                    <li><a href="#upload" class="button">Upload new X-Ray</a></li>
+                    {% endif %}
+                </ul>
+            </div>
+    </section>
+

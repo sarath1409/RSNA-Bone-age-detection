@@ -1,0 +1,46 @@
+{% load static %}
+    
+    <section id="upload" class="wrapper style1 fullscreen fade-up">
+        <div class="inner">
+            <h2>Upload a X-Ray</h2>
+            <p>The X-Ray must be in jpeg format<br/>
+            Please fill the details of the patient.</p>
+            <div class="split style1">
+                <section>
+                    <form method="POST" action="xray_age/upload/" enctype="multipart/form-data">
+                        {% csrf_token %}
+                        <div class="fields">
+                            <div class="field center">
+                                <label for="name">Name</label>
+                                <input type="text" name="name" id="name" placeholder="Fullname" />
+                            </div>
+                            
+                            <div class="field half">
+                                <label for="gender">Gender</label>
+                                  <select name="gender">
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                  </select>
+                                 
+                            </div>
+                            <div class="field half">
+                                <label for="weight">Weight</label>
+                                <input type="text" name="weight" id="weight" placeholder="weight"/>
+                            </div>
+                            <div class="field">
+                                <input type="file" name="image"> 
+                            </div>
+                        </div>
+                        <ul class="actions">
+                            <li><a href="" class="button submit">Submit</a></li>
+                        </ul>
+                    </form>
+                </section>
+                
+            </div>
+        </div>
+    </section>
+
+
+        
+

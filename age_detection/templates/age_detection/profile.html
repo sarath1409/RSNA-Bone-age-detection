@@ -1,0 +1,46 @@
+{% load static %}
+  <section id="profile" class="wrapper style2 fullscreen fade-up">
+        <div class="inner">
+            <h2>Profile</h2>
+            <h3>Your previous results</h3>
+            <div class="split style1">
+                <section>
+                    <div class="table-wrapper">
+                        <table class="alt">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Gender</th>
+                                    <th>Weight</th>
+                                    <th>Age</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Abhay Raichand</td>
+                                    <td>Male</td>
+                                    <td>80</td>
+                                    <td>25</td>
+                                </tr>
+                                <tr>
+                                    <td>Piyali Jaiswal</td>
+                                    <td>Female</td>
+                                    <td>55</td>
+                                    <td>24</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+                <section>
+                    <h2>{{ user.first_name }} {{ user.last_name }}</h2>
+                    <img src="{%static 'images/default-image.jpg'%}" data-position="center center" height="250"/>
+                    <a href="/account/logout" class="button primary small">Log out</a>
+                </section>
+            </div>
+            
+            <ul class="actions">
+                <li><a href="#upload" class="button">Upload another X-ray</a></li>
+            </ul>
+        </div>
+    </section>

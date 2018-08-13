@@ -1,0 +1,199 @@
+<!DOCTYPE HTML>
+{% load static %}
+<html>
+	<head>
+		<title>X-Ray Age</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="{%static 'css/main.css'%}" />
+		<noscript><link rel="stylesheet" href="{%static 'css/noscript.css'%}" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Sidebar -->
+			<section id="sidebar">
+				<div class="inner">
+					<nav>
+						<ul>
+							<li><a href="#intro">Welcome</a></li>
+							<li><a href="#signup">Sign Up</a></li>
+							<li><a href="#upload">Upload</a></li>
+							<li><a href="#profile">Profile</a></li>
+							<li><a href="#about">About</a></li>
+						</ul>
+					</nav>
+				</div>
+			</section>
+
+			<div id="wrapper">
+
+				<!-- Intro -->
+					<section id="intro" class="wrapper style1 fullscreen fade-up">
+						<div class="inner">
+							<h1>RSNA Bone Age Detection</h1>
+							<p>Welcome to RSNA Bone Age Detector,</p>
+							<ul class="actions">
+								<li><a href="#one" class="button scrolly">Sign up</a></li>
+							</ul>
+						</div>
+					</section>
+
+					<section id="signup" class="wrapper style2 fullscreen fade-up">
+							<div class="inner">
+								<div class="split style1">
+									<section>
+										<h2>Sign Up</h2>
+										<form method="post" action="#">
+												<div class="fields">
+													<div class="field half">
+														<label for="name">Username</label>
+														<input type="text" name="username" id="username" placeholder="Username" />
+													</div>
+												</div>
+												<ul class="actions">
+													<li><a href="" class="button submit">Google signup</a></li>
+												</ul>
+										</form>
+									</section>
+									<section>
+										<h3>Already an User??</h3>
+										<h2>Login</h2>
+										<a href="#" class="button primary fit small">Login</a>
+									</section>
+								</div>	
+							</div>
+						</section>
+	
+					
+					<!-- Upload page -->
+					<section id="upload" class="wrapper style1 fullscreen fade-up">
+						<div class="inner">
+							<h2>Upload a X-Ray</h2>
+							<p>The X-Ray must be in jpeg format<br/>
+							Please fill the details of the patient.</p>
+							<div class="split style1">
+								<section>
+									<form method="post" action="#">
+										<div class="fields">
+											<div class="field center">
+												<label for="name">Name</label>
+												<input type="text" name="name" id="name" placeholder="Fullname" />
+											</div>
+											
+											<div class="field half">
+												<label for="gender">Gender</label>
+												  <select name="gender">
+													<option value="male">Male</option>
+													<option value="female">Female</option>
+												  </select>
+												 
+											</div>
+											<div class="field half">
+												<label for="weight">Weight</label>
+												<input type="text" name="weight" id="weight" placeholder="weight"/>
+											</div>
+											<div class="field">
+												<input type="file" > 
+											</div>
+											<!-- <div class="field">
+												<label for="message">Message</label>
+												<textarea name="message" id="message" rows="5"></textarea>
+											</div> -->
+										</div>
+										<ul class="actions">
+											<li><a href="" class="button submit">Submit</a></li>
+										</ul>
+									</form>
+								</section>
+								<section>
+									Result will be displayed here.
+								</section>
+							</div>
+						</div>
+					</section>
+
+					<!-- Profile Page -->
+					<section id="profile" class="wrapper style2 fullscreen fade-up">
+						<div class="inner">
+							<h2>Profile</h2>
+							<h3>Your previous results</h3>
+							<div class="split style1">
+								<section>
+									<div class="table-wrapper">
+										<table class="alt">
+											<thead>
+												<tr>
+													<th>Name</th>
+													<th>Gender</th>
+													<th>Weight</th>
+													<th>Age</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Abhay Raichand</td>
+													<td>Male</td>
+													<td>80</td>
+													<td>25</td>
+												</tr>
+												<tr>
+													<td>Piyali Jaiswal</td>
+													<td>Female</td>
+													<td>55</td>
+													<td>24</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</section>
+								<section>
+									<h2>Usename</h2>
+									<img src='{%static "images/default-image.jpg"%}' data-position="center center" height="250"/>
+								</section>
+							</div>
+							
+							<ul class="actions">
+								<li><a href="#" class="button">Back to home</a></li>
+							</ul>
+						</div>
+					</section>
+
+					<!-- About Page -->
+					<section id="about" class="wrapper style1 fullscreen spotlights">
+						<section>
+							<a href="#" class="image"><img src="{%static 'images/hand_xray.jpg'%}" alt="" data-position="center center" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>About us</h2>
+									<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>
+									<ul class="actions">
+										<li><a href="#intro" class="button">Back to home</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
+					</section>
+				
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper style1-alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; RSNA Bone Age Detection. All rights reserved.</li>
+						<li>P G Sarath Chandra</li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="{%static 'js/jquery.min.js'%}"></script>
+			<script src="{%static 'js/jquery.scrollex.min.js'%}"></script>
+			<script src="{%static 'js/jquery.scrolly.min.js'%}"></script>
+			<script src="{%static 'js/browser.min.js'%}"></script>
+			<script src="{%static 'js/breakpoints.min.js'%}"></script>
+			<script src="{%static 'js/util.js'%}"></script>
+			<script src="{%static 'js/main.js'%}"></script>
+	</body>
+</html>
